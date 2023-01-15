@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  margin: 0px !important;
+}
+
+/* Search Results Tiles */
+.result-tile {
+  display: inline-flex;
+  position: relative;
+}
+
+.img-tile {
+  height: 360px;
+  width: 275px;
+  margin: 10px;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.tile-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 360px;
+  width: 275px;
+  margin: 10px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.result-tile:hover .tile-overlay {
+  opacity: 1;
+  transform: scale(1.2);
+  z-index: 100;
+}
+
+.result-tile:hover .img-tile {
+  transform: scale(1.2);
+  z-index: 100;
+}
+
+.movie-name {
+  margin-left: 20px;
+}
+
+.genre {
+  margin-left: 20px;
+  background-color: salmon;
+  width: fit-content;
+  padding: 2px 10px;
+  border-radius: 5px;
+  display: inline;
+  margin-right: 10px;
+}
+
+.Short,
+.Musical,
+.Music,
+.Family {
+  background-color: skyblue;
+}
+.Mystery,
+.Adventure,
+.History,
+.War {
+  background-color: coral;
+}
+.Thriller,
+.Documentary,
+.Biography {
+  background-color: darkmagenta;
+}
+.Horror,
+.Sci-Fi,
+.Animation,
+.Crime {
+  background-color: dimgrey;
+}
+.Action,
+.\\N,
+.Fantasy,
+.Sport {
+  background-color: dodgerblue;
+}
+.Drama {
+  background-color: firebrick;
+}
+.Romance {
+  background-color: hotpink;
+}
+.Comedy {
+  background-color: darkslateblue;
+}
+
+.cast {
+  margin-left: 20px;
+}
+
+.links {
+  margin-left: 20px;
+}
+
+.link.imdb {
+  font-size: 36px;
+  color: gold;
+  margin-right: 20px;
+}
+
+.link.wiki {
+  font-size: 36px;
+  color: #fff;
+}
+
+.summary {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+/* Header styles */
+
+.header-logo {
+  margin-left: 20px;
+  font-family: 'Pacifico', cursive;
+  color: #0f1626;
+}
+
+.header-logo a {
+  text-decoration: none;
+  color: #0f1626;
+}
+
+.fas.fa-film {
+  font-size: 54px;
+}
+
+.sui-layout-header {
+  padding: 0px 24px 0px;
+  border-bottom: 1px solid #eeeeee;
+  background: #ff533d;
+}
+
+input.button.sui-search-box__submit {
+  background: #0f1626 !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 80px;
+}
+
+input.button.sui-search-box__submit:hover {
+  letter-spacing: 2px;
+  transform: scale(1.1);
+}
+
+/* Facet and layout styles */
+
+.sui-facet__title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.sui-multi-checkbox-facet {
+  font-size: 15px;
+}
+
+.sui-sorting__label {
+  font-size: 13px;
+}
+
+.sui-results-per-page__label {
+  font-size: 14px;
+}
+
+.sui-layout-body {
+  background: #f5f5f5;
+}
+
+.sui-layout-header__inner {
+  margin: auto;
+}
+
+.header-div {
+  display: inline-flex;
+}
+
+.sui-search-box {
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 700px;
+}
+
+/* Movies page */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #ff533d;
+  color: #0f1626;
+  margin-top: 0px !important;
+}
+
+.crossword {
+  padding-top: 100px;
+  padding-left: 50px;
+  height: 200px !important;
+  font-family: 'Roboto', sans-serif;
+}
